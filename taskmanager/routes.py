@@ -1,7 +1,6 @@
 from flask import render_template, url_for
 from taskmanager import app, db
-from taskmanager.models import Admindata, Userdata, Tabledata
-
+from taskmanager.models import User, Admindata, Tabledata
 
 
 @app.route("/")
