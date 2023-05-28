@@ -1,12 +1,11 @@
-from flask import render_template
+
 from taskmanager import app, db
-from taskmanager.models import Admindata, Userdata, Tabledata
 
 
 class Userdata(db.Model):
     # schema for the Userdata model
     id = db.Column(db.Integer, primary_key=True)
-    user_name = db.Column(db.Sptring(10), unique=True, nullable=False)
+    user_name = db.Column(db.String(10), unique=True, nullable=False)
     pass_word = db.Column(db.String(10), unique=True, nullable=False)
     last_name = db.Column(db.String(10), unique=True, nullable=False)
     email = db.Column(db.String(10), unique=True, nullable=False)
@@ -18,7 +17,7 @@ class Userdata(db.Model):
         return self.id, self.user_name, self.pass_word, self.last_name, self.email, self.contact_number
 
 
-class Tabledatqa(db.Model):
+class Tabledata(db.Model):
     # schema for the table model
     id = db.Column(db.Integer, primary_key=True)
     table_name = db.Column(db.Text, nullable=False)
