@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="row">
+    <form class="col s12" method = "POST"  action="{{ url_for('admin') }}">
+      
+        <div class="row">
+            <div class="col s12 center-align">
+                <p class="btn black">
+                    Admin login
+                </p>
+            </div>
+        </div> 
+      <div class="row">
+        <div class="input-field col s12">
+          <label for="username">Username</label><input id="username" type="text" class="validate">
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <label for="password">Password</label><input id="password" type="password" class="validate">
+        </div>
+      </div>
+       <!-- submit button -->
+       <div class="row">
+        <div class="col s12 center-align">
+            <button type="submit" class="btn-large light-blue darken-1">
+                login
+            </button>
+        </div>
+    </div>
+        
+        </div>
+      </div>
+    </form>
+  </div>
+        
+
+
+
+{% endblock %}
