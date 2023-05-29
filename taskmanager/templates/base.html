@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
      <!-- Compiled and minified CSS -->
     
@@ -19,10 +21,10 @@
 <body>
     <header>
         <!--top nav-->
-    <nav class ="light-blue darken-1">
+    <nav class ="#26a69a teal lighten-1">
         <div class="nav-wrapper">
           <a href="#!" class="brand-logo">Book A Table</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="{{url_for('home')}}">Home</a></li>
             <li><a href="{{url_for('admin')}}">Admin</a></li>
@@ -46,14 +48,15 @@
     </main>
               
     
-    <footer class="page-footer chcolate darken-3">
+    <footer class="#039be5 light-blue darken-1">
         <div class="footer-copyright">
           <div class="container">
-          © 2014 Copyright Text
+            &copy <span id="copyright"></span> My Website 
           <a class="grey-text text-lighten-4 right" href="http://codeinstitute.net" target="_blank">Code institute</a>
           </div>
         </div>
       </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
       <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     
